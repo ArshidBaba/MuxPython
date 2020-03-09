@@ -1,2 +1,2 @@
-export MUX_TOKEN_ID=ce72aa96-e776-4cc0-9a46-21aa334c07ff
-export MUX_TOKEN_SECRET=Generated on 03/09/2020 by:arshid@hashlearn.com
+export MUX_TOKEN_ID=ec4769e8-d952-4dd7-b21c-a32dea13b120
+export MUX_TOKEN_SECRET=Q2T9XbZih55GFuUDdzKxEm6ANy6bfWWa4/RXQektKmop4JUXWm9jPlbthXQ5XOK1tJxbZ/QSYd5
