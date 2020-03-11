@@ -1,5 +1,5 @@
 import pickle
-
+import os 
 from psycopg2 import Error
 import psycopg2
 
@@ -14,11 +14,11 @@ print(streams['Sm7qN907JQg'])
 #     print(key, value)
 def updateInBulk(records):
     try:
-        connection = psycopg2.connect(user = "wreaacjifjkptw",
-                                    password = "67b4ddc3dc0a3dc9af1e57bd90e86f80a6c02b749d6c64bcd3ae71df804f3200",
-                                    host = "ec2-107-21-120-104.compute-1.amazonaws.com",
-                                    port = "5432",
-                                    database = "dcssa6vkn0vurd")
+        connection = psycopg2.connect(user = os.environ.get('DB_USER'),
+                                    password = os.environ.get('DB_PASSWORD'),
+                                    host = os.environ.get('HOST'),
+                                    port = os.environ.get('PORT'),
+                                    database = os.environ.get('DATABASE'))
 
         cursor = connection.cursor()
 
