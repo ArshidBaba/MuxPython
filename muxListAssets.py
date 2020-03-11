@@ -14,9 +14,19 @@ assets_api = mux_python.AssetsApi(mux_python.ApiClient(configuration))
 print("Listing Assets: \n")
 try:
     list_assets_response = assets_api.list_assets()
+    # print(list_assets_response)
     for asset in list_assets_response.data:
         print('Asset ID: ' + asset.id)
         print('Status: ' + asset.status)
+        print(asset.playback_ids)
+        playback_ids = asset.playback_ids
+        # print(type(playback_ids))
+        for i in playback_ids:
+            i = vars(i)
+            print(i)
+            print(type(i))
+            id = i['_id']
+            print(id)
         print('Duration: ' + str(asset.duration) + "\n")
         # print(asset, "\n")
 except ApiException as e:
