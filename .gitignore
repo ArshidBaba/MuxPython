@@ -1,2 +1,4 @@
 .vscode/
 text.txt
+*hl-public-ssh-keypair.pem
+*.bash_profile

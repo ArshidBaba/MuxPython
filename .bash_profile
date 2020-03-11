@@ -1,2 +1,7 @@
 export MUX_TOKEN_ID=a5d647b8-bfbe-4d57-af86-2d3b49c45394
 export MUX_TOKEN_SECRET=lSE8qOXdr8FYwn5HNNBPhZPeqT/M1aiSs1VGjxSsctaC3DiOJSzyatbBhJTNodmYlMbIifaRaUa
+export DB_USER=wreaacjifjkptw
+export DB_PASSWORD=67b4ddc3dc0a3dc9af1e57bd90e86f80a6c02b749d6c64bcd3ae71df804f3200
+export HOST=ec2-107-21-120-104.compute-1.amazonaws.com
+export PORT=5432
+export DATABASE=dcssa6vkn0vurd
